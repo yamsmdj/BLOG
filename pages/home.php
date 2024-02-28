@@ -1,11 +1,13 @@
-<?php
+<ul>
+    <?php foreach ($db->query('SELECT * FROM articles', 'App\Table\Article') as $post) : ?>
+        <li>
 
-$pdo = new PDO('mysql:dbname=db_blog;host=localhost', 'root', '');
+            <?php var_dump($post); ?>
 
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$res = $pdo->query('SELECT * FROM articles');
+            <h2><a href="<?= $post->getURL() ?>"><?= $post->titre; ?></a></h2>
 
-var_dump($res->FetchALl(PDO::FETCH_OBJ));
-// $count = $pdo->exec('INSERT INTO articles SET titre="Mon titre", date="' . date('Y-m-d H:i:s') . '"');
+            <p><?= $post->getExtrait(); ?></p>
 
-// var_dump($count);
+        </li>
+    <?php endforeach; ?>
+</ul>
