@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Starter Template for Bootstrap</title>
+    <title>BLOG</title>
 
 </head>
 
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="/public/index.php">Creation de blog</a>
             </div>
         </div>
     </nav>
@@ -32,7 +32,7 @@
             <?= $content; ?>
         </div>
 
-    </div><!-- /.container -->
+    </div>
 </body>
 
 </html>
